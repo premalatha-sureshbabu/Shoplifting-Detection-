@@ -1,4 +1,4 @@
-heft Detection Algorithm - Report
+Theft Detection Algorithm - Report
 
 1. Data Preprocessing:
 
