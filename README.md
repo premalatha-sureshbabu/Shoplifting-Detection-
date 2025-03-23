@@ -15,6 +15,7 @@ Rationale:
 Conversion to frames allows for image-based analysis, which is compatible with most image classification models.
 Resizing standardizes the input dimensions, making it easier to feed into pre-trained models like EfficientNetV2B0.
 Data augmentation helps in generating additional training samples, reducing overfitting, and enhancing the model's ability to generalize to unseen data.
+
 2. Feature Engineering:
 
 Methods:
@@ -26,6 +27,7 @@ Effectiveness:
 
 HOG features have demonstrated effectiveness in identifying patterns and shapes within images, making them suitable for detecting objects like human figures in shoplifting scenarios.
 The extracted features serve as informative input for the subsequent classification model, aiding in distinguishing between shoplifting and non-shoplifting activities.
+
 3. Model Selection and Hyperparameter Tuning:
 
 Model:
@@ -42,19 +44,25 @@ Hyperparameter Tuning:
 Regularization techniques such as L2 regularization with a coefficient of 0.001 were applied to prevent overfitting.
 The Adam optimizer with default parameters was used for model optimization.
 Batch size, learning rate, and other hyperparameters were kept at default values due to the limited scope of this project.
+
 4. Evaluation Results:
 
 Metrics:
 
 Accuracy: 76.44%
+
 Precision: 83.37%
+
 Recall: 89.64%
+
 F1 Score: 86.40%
+
 Confusion Matrix:
 
 Predicted Negative	Predicted Positive
 Actual Negative	True Negative	False Positive
 Actual Positive	False Negative	True Positive
+
 5. Discussion:
 
 Strengths:
