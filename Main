@@ -1,0 +1,18 @@
+## Dataset 
+```
+import zipfile
+import os
+
+# Path to uploaded ZIP file
+dataset_zip = "/content/shop.v2i.yolov8.zip"  # Ensure correct path
+
+# Extract location
+extract_path = "/content/dataset"
+os.makedirs(extract_path, exist_ok=True)
+
+# Extract dataset
+with zipfile.ZipFile(dataset_zip, "r") as zip_ref:
+    zip_ref.extractall(extract_path)
+
+print(f"✅ Dataset extracted to: {extract_path}")
+```
